@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 5vmin;
+  width: 100%;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+input {
+  font-size: inherit;
+  padding: 1rem;
+  background: #d2def4;
+  border: 2px solid #f0f0f0;
+  border-radius: 0.55rem;
+  display: block;
+  widows: 100%;
+}
+
+li {
+  padding: 1rem;
+  border-bottom: 1px solid #d2def4;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-block: 1rem;
+}
+
+li [data-selected] {
+  background: #1d293d;
+  transition: background 0.2s ease;
+}
+
+li:not([data-selected]):hover {
+  background: #e8f0fe44;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 85%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #1d293d;
+}
